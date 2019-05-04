@@ -1,0 +1,10 @@
+#!/bin/bash
+
+rm -rf ./secubit/node_modules
+
+cd ./secubit
+npm install
+npm run build
+cd ..
+
+# docker run -it --rm -v $(pwd):/secubit -w=/secubit amd64/node:10.5.0 bash ./scripts/build_app

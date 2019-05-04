@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <title>SecuBit Wallet</title>
+    <style>
+      html { background-color: white; }
+
+      body { font-family: 'Avenir', Arial, sans-serif; }
+      /* body { font-family: Menlo, monaco, Courier; font-size: 12px; margin: 0; } */
+
+      * {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          outline: 0;
+          font-size: 100%;
+          vertical-align: baseline;
+          background: transparent;
+          overflow: hidden;
+        }
+
+      .loader {
+          border: 6px solid white;
+          border-top: 6px solid darkgray;
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+          animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0;">
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute; top: 0; right: 0; bottom: 0; left: 0;">
+        <h1 style="color: black; font-size: 17px; margin-bottom: 12px">Loading SecuBit Wallet...</h1>
+        <div class="loader"></div>
+      </div>
+    </div>
+    <script src="%PUBLIC_URL%/bcoin.js"></script>
+    <!-- <script src="%PUBLIC_URL%/bcoin-worker.js"></script> -->
+    <script src="%PUBLIC_URL%/bcash.js"></script>
+    <!-- <script src="%PUBLIC_URL%/bcash-worker.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+rm -rf ./bcoin
+rm -f ./secubit/public/bcoin.js
+rm -f ./secubit/public/bcoin-worker.js
+
+git clone https://github.com/bcoin-org/bcoin.git
+cd ./bcoin
+git checkout 58ea98dadbbbcc2066a1d4c946cea28f1d2f942b
+npm install
+npm run webpack-browser
+cd ..
+
+cp ./bcoin/browser/bcoin.js ./secubit/public/bcoin.js
+cp ./bcoin/browser/bcoin-worker.js ./secubit/public/bcoin-worker.js

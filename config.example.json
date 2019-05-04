@@ -1,0 +1,44 @@
+{
+  "RSA_KEY_SIZE": 1024,
+  "BCOIN": true,
+  "BCASH": true,
+  "TESTNET": true,
+  "BCOIN_URI": "localhost:18332",
+  "BCOIN_APIKEY": "changeme",
+  "BCASH_URI": "localhost:18342",
+  "BCASH_APIKEY": "changeme",
+  "LOG_TO_FILE": true,
+  "SERVE_STATIC_APP": true,
+  "MIN_POOL": {
+    "tBTC": 2,
+    "tBCH": 2,
+    "BTC": 2,
+    "BCH": 2
+  },
+  "MAX_POOL": {
+    "tBTC": 1000,
+    "tBCH": 1000,
+    "BTC": 1000,
+    "BCH": 1000
+  },
+  "SAT_PER_BYTE": {
+    "tBTC": 20,
+    "tBCH": 1,
+    "BTC": 6,
+    "BCH": 1
+  },
+  "DENOMINATION": {
+    "BTC": 280000,
+    "BCH": 2700000,
+    "tBTC": 280000,
+    "tBCH": 2700000
+  },
+  "PORT": 8081,
+  "DELAY_BETWEEN_ROUNDS": 15,
+  "TIMEOUT": 10,
+  "LETSENCRYPT_SSL": false,
+  "LETSENCRYPT_URLS": ["api.yourdomain.com"],
+  "LETSENCRYPT_EMAIL": "youremail@example.com",
+  "FETCH_RATES": true,
+  "PUNISH_BAN_LIMIT": 9999
+}

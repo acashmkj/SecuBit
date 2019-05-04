@@ -1,0 +1,20 @@
+#!/bin/bash
+
+systemctl stop bcoin
+systemctl stop bcash
+systemctl stop secubitwallet
+systemctl disable bcoin
+systemctl disable bcash
+systemctl disable secubitwallet
+
+docker rmi secubitwallet
+docker rmi bcoin
+docker rmi bcash
+
+rm -f /etc/systemd/system/bcoin.service
+rm -f /etc/systemd/system/bcash.service
+rm -f /etc/systemd/system/secubitwallet.service
+
+# rm -rf /root/secubitwallet
+# rm -rf /root/bcash
+# rm -rf /root/bcoin

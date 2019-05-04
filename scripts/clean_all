@@ -1,0 +1,7 @@
+#!/bin/bash
+
+./scripts/clean
+
+rm -rf /root/secubitwallet
+rm -rf /root/bcash
+rm -rf /root/bcoin

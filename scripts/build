@@ -1,0 +1,7 @@
+#!/bin/bash
+
+./scripts/build_bcoin
+./scripts/build_bcash
+./scripts/build_app
+
+# docker run -it --rm -v $(pwd):/secubit -w=/secubit amd64/node:10.5.0 bash ./scripts/build

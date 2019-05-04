@@ -1,0 +1,17 @@
+.DS_Store
+/other
+node_modules
+/blindlink/dist
+/shufflelink/dist
+/hostname1
+/hostname2
+yarn.lock
+/config.json
+/bcoin
+/bcash
+/logs
+/secubit/public/bcash.js
+/secubit/public/bcoin.js
+/secubit/public/bcash-worker.js
+/secubit/public/bcoin-worker.js
+/secubitwallet.html

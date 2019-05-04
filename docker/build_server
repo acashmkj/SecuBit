@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker rmi secubitwallet
+docker build --tag secubitwallet -f ./docker/Dockerfile.secubitwallet .

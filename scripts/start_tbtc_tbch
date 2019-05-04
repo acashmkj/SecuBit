@@ -1,0 +1,24 @@
+#!/bin/bash
+
+apikey=`openssl rand -hex 32`
+
+sed "s/changeme/$apikey/g" ./config.example.json > ./config.json
+echo $apikey
+
+sed "s/changeme/$apikey/g" ./docker/bcoin.service > /etc/systemd/system/bcoin.service
+sed "s/changeme/$apikey/g" ./docker/bcash.service > /etc/systemd/system/bcash.service
+cp ./docker/secubitwallet.service /etc/systemd/system/secubitwallet.service
+
+sh ./docker/build_bcoin
+sh ./docker/build_bcash
+sh ./docker/build_server
+
+systemctl daemon-reload
+systemctl enable bcash
+systemctl enable bcoin
+systemctl enable secubitwallet
+systemctl start bcash
+systemctl start bcoin
+systemctl start secubitwallet
+
+echo DONE

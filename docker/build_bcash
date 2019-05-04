@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker rmi bcash
+docker build --tag bcash -f ./docker/Dockerfile.bcash .

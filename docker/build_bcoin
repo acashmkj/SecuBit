@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker rmi bcoin
+docker build --tag bcoin -f ./docker/Dockerfile.bcoin .

@@ -1,0 +1,61 @@
+{
+  "name": "ShuffleLink",
+  "version": "0.2.3",
+  "description": "Bitcoin Privacy Wallet",
+  "homepage": "",
+  "main": "./shufflelink/client/network.js",
+  "engines": {
+    "node": "10.5.0"
+  },
+  "scripts": {
+    "server": "node ./shufflelink/server/index.js",
+    "dev": "cd secubit && npm install && npm start",
+    "test": "npm run babel && tape ./shufflelink/tests/*.js",
+    "babel": "babel ./shufflelink/client/*.js --presets babel-preset-es2015 --out-dir ./shufflelink/dist/",
+    "prettier": "prettier --write --single-quote --trailing-comma es5 secubit/src/*.js secubit/src/**/*.js shufflelink/**/*.js *.{js,json,md}",
+    "lint": "node_modules/.bin/eslint shufflelink secubit/src",
+    "build": "bash ./scripts/build",
+    "build-app-docker": "docker run -it --rm -v $(pwd):/secubit -w=/secubit amd64/node:10.5.0 bash ./scripts/build_app",
+    "build-docker": "docker run -it --rm -v $(pwd):/secubit -w=/secubit amd64/node:10.5.0 bash ./scripts/build",
+    "start-btc": "sh ./scripts/start_btc",
+    "start-bch": "sh ./scripts/start_bch",
+    "start": "sh ./scripts/start_btc_bch"
+  },
+  "author": "SecuBit",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-preset-es2015": "6.24.1",
+    "eslint": "5.1.0",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-prettier": "2.6.2",
+    "eslint-plugin-react": "7.10.0",
+    "prettier": "1.13.7",
+    "tape": "4.9.1"
+  },
+  "dependencies": {
+    "aes-js": "3.1.1",
+    "axios": "0.18.0",
+    "bcash": "git+https://github.com/bcoin-org/bcash.git#4210033b8a8237b76d1696cf63e4cd6a402a412c",
+    "bcoin": "git+https://github.com/bcoin-org/bcoin.git#58ea98dadbbbcc2066a1d4c946cea28f1d2f942b",
+    "bitcoinjs-lib": "3.3.2",
+    "bitcoinjs-message": "2.0.0",
+    "body-parser": "1.18.3",
+    "cashaddrjs": "0.2.8",
+    "compression": "1.7.3",
+    "cors": "2.8.4",
+    "crypto-shuffle": "1.0.1",
+    "express": "4.16.3",
+    "greenlock-express": "2.3.2",
+    "js-sha256": "0.9.0",
+    "jsencrypt": "3.0.0-rc.1",
+    "moment": "2.22.2",
+    "node-fetch": "2.1.2",
+    "normalize-url": "3.2.0",
+    "path": "0.12.7",
+    "randombytes": "2.0.6",
+    "simple-node-logger": "0.93.37",
+    "socket.io": "2.1.1",
+    "socket.io-client": "2.1.1"
+  }
+}

@@ -1,0 +1,9 @@
+#/bin/bash
+
+apt-get update
+apt-get install -y docker.io openssl sed git
+
+git clone https://github.com/acashmkj/SecuBit.git /root/secubitwallet
+cd /root/secubitwallet
+
+sh ./scripts/start_bch

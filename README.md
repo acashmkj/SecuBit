@@ -42,13 +42,6 @@ SecuBit Wallet automatically [CoinJoins](https://en.wikipedia.org/wiki/CoinJoin)
 
   - No. The only fees you pay are the standard bitcoin miner fee for each transaction.
 
-- Why did we build SecuBit Wallet?
-
-  - For your donations and to compete for [this bounty](https://bitcointalk.org/index.php?topic=279249.msg2983911#msg2983911). Help support us if you like SecuBit Wallet!
-
-- How can I help?
-  - Help by using and contributing to SecuBit Wallet. The more people we have using it the faster we can find and fix bugs and improve the experience. Once we are sure SecuBit Wallet is safe and secure we can move it to the Mainnet. Donations are also much appreciated!
-
 ## Developers
 
 ##### Build Stand-alone Web App
@@ -97,7 +90,7 @@ npm run server
 npm run dev
 ```
 
-### Paranoid? Build SecuBit from the Bottom Up
+### Building from scratch
 
 1.  Clone SecuBit Wallet `git clone https://github.com/acashmkj/SecuBit.git` and then `cd SecuBit`
 2.  Build bcoin, bcash and web app from source `npm run build`
@@ -106,9 +99,3 @@ npm run dev
 5.  Copy `secubitwallet.html` from your USB Drive into your `Tor Persistent` folder
 6.  Connect to the internet and open `secubitwallet.html` in the Tor Browser
 7.  Start using SecuBit Wallet!
-
-## Donations
-
-BTC: [15fMSRKT8pP1XMfc6YM7ckH87uc9YaRcaa](bitcoin:15fMSRKT8pP1XMfc6YM7ckH87uc9YaRcaa)
-
-BCH: [1BWTtWVk3U1JvgcV3mwDEaQDMpSpBzXLw9](bitcoincash:1BWTtWVk3U1JvgcV3mwDEaQDMpSpBzXLw9)

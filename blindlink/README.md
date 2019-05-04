@@ -19,14 +19,6 @@ SecuBit Wallet is not a traditional Bitcoin wallet. You cannot use it to make a 
 6. A successful round will send a portion of your Public Bitcoin into your Private Wallet
 7. SecuBit Wallet will automatically add you into following rounds until all of your Public Bitcoin is moved to your Private Wallet
 
-## Voting Booth (Donations)
-BTC: [15fMSRKT8pP1XMfc6YM7ckH87uc9YaRcaa](bitcoin:15fMSRKT8pP1XMfc6YM7ckH87uc9YaRcaa)
-
-BCH: [1BWTtWVk3U1JvgcV3mwDEaQDMpSpBzXLw9](bitcoincash:1BWTtWVk3U1JvgcV3mwDEaQDMpSpBzXLw9)
-
-Which coin should we focus on first? Vote with your favorite currency!
-
-
 ## Advantages
 * [You don't need to trust anyone with your Bitcoin](https://github.com/acashmkj/SecuBit/blob/master/docs/blindlink.md)
 * No extra fees except for the standard Bitcoin transaction miner fee per round
